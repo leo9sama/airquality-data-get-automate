@@ -1,8 +1,7 @@
 name: Daily Data Capture for
 
 on:
-  schedule:
-    - cron: '38 18 * * *'  # Runs at 9:00 PM (21:00) every day
+
   workflow_dispatch:
 jobs:
   data_capture:
