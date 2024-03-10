@@ -30,6 +30,8 @@ jobs:
 
       - name: Add and commit CSV file
         run: |
+          git config user.email "harshuleonite7@gmail.com"
+          git config user.name "leo9sama"
           git add air_quality_data.csv
           git commit -m "Add generated CSV file"
       - uses: actions/checkout@v3  # Fetch latest changes (optional)
