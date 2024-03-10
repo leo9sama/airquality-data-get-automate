@@ -25,5 +25,7 @@ jobs:
       - name: Run data_capture.py
         run: |  # Executes the script with error handling
           python data_capture.py || (echo "Error running data_capture.py" && exit 1)
+      - name: List Files
+        run: ls -R
 
           # Add logging within data_capture.py for more detailed insights
