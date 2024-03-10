@@ -47,6 +47,8 @@ def update_csv(data, csv_filename='airquality-data-get-automate/air_quality_data
 
 
 if __name__ == "__main__":
+    print("Current Working Directory:", os.getcwd())  # Print the current working directory
+
     air_quality_data = get_data()
 
     if air_quality_data:
