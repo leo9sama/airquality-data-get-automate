@@ -36,6 +36,8 @@ def update_csv(data, csv_filename='airquality-data-get-automate/air_quality_data
     ]
 
     try:
+        os.makedirs(os.path.dirname(csv_filename), exist_ok=True)
+
         with open(csv_filename, 'a', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
             if csvfile.tell() == 0:
