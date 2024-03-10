@@ -1,10 +1,10 @@
 import requests
 import pandas as pd
 from datetime import datetime
-import csv,sys
+import csv,os
 
 def get_data():
-    api_key = 'AIR_QUALITY_API'
+    api_key = os.environ.get('AIR_QUALITY_API')
 
     aqicn_base_url = 'https://api.waqi.info/feed/Kurla, Mumbai, India '
 
