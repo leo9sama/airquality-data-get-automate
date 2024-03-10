@@ -7,7 +7,9 @@ on:
 jobs:
   data_capture:
     runs-on: ubuntu-latest
-
+    env:
+      AIR_QUALITY_API: ${{ secrets.AIR_QUALITY_API }}
+      
     steps:
       - uses: actions/checkout@v4  # Checks out the code repository
 
