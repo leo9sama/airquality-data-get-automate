@@ -28,4 +28,11 @@ jobs:
       - name: List Files
         run: ls -R
 
+      - name: Add and commit CSV file
+        run: |
+          git add air_quality_data.csv
+          git commit -m "Add generated CSV file"
+      - uses: actions/checkout@v3  # Fetch latest changes (optional)
+      - name: Push changes
+        run: git push origin main  
           # Add logging within data_capture.py for more detailed insights
