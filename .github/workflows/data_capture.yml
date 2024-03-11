@@ -1,6 +1,8 @@
 name: Daily Data Capture for
 
 on:
+  schedule:
+    - cron: '35 7 * * *'
 
   workflow_dispatch:
 jobs:
